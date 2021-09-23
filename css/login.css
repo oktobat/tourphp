@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.login {
+    background-image:url(../img/img_top5.jpg)
+}
+
+.loginForm { width:450px; margin:100px auto 50px}
+.loginForm p { position:relative; margin:37px 0 24px;  }
+
+
+.loginForm div p label { width:100%; height:36px; 
+    position:absolute; top:0; left:0; transition:all 0.2s}
+.loginForm div p.on label { height:12px; top:-12px; color:blue; 
+    font-size:12px; z-index:-1; }    
+
+.loginForm div p input { width:100%; height:36px; border:none; border-bottom:1px solid #000; outline:none }
+.loginForm div p.on input { border-bottom:1px solid blue; outline:none }
+
+
+.loginForm p.btn { text-align:center }
+.loginForm button { width:280px; height:44px; background-color:#ededed; border-radius:50px; border:none }
+
+.login_list { width:450px; margin:50px auto 30px}
+.login_wrap .login_list li a {
+    display:block;
+    height:54px; line-height:54px;
+    text-align:center; 
+    background-repeat:no-repeat;
+    background-size:45px 45px;
+    background-position:10px center;
+    border-radius:5px; color:#fff;
+    margin:5px 0; padding-left:30px; 
+}
+.login_wrap .login_list li:nth-child(1) a {
+    background-image:url(../img/ico_kakao.png);
+    background-color:#ffea26; color:#000;
+}
+.login_wrap .login_list li:nth-child(2) a {
+    background-image:url(../img/ico_naver.png);
+    background-color:#00c300
+}
+.login_wrap .login_list li:nth-child(3) a {
+    background-image:url(../img/ico_face.png);
+    background-color:#405ea9
+}
+.login_wrap .login_list li:nth-child(4) a {
+    background-image:url(../img/ico_cellphone.png);
+    background-color:#888
+}
+
+.login_wrap .btnonoff_line { text-align:center; margin-bottom:150px }
+.login_wrap .btnonoff_line .switch { width:35px; height:22px; 
+    display:inline-block; position:relative;
+    cursor:pointer;
+}
+.login_wrap .btnonoff_line p { display:inline-block;
+ }
+
+.login_wrap .btnonoff_line .switch::before {
+    content:''; position:absolute; top:0px; left:0px;
+    width:100%; height:100%; border-radius:16px; background:#fff; border:1px solid #e5e5e5;
+    transition:all 0.3s
+}
+.login_wrap .btnonoff_line .switch::after {
+    content:''; position:absolute; top:2px; left:2px;
+    width:19px; height:19px; border-radius:50%; background:#fff; 
+    box-shadow:0 2px 5px #999;
+    transition:all 0.3s
+}
+.login_wrap .btnonoff_line.on .switch::before {
+    background:#1a57cb; 
+}
+.login_wrap .btnonoff_line.on .switch::after {
+    left: 15px;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .loginForm, .login_list { width:290px; }
+}

@@ -1,0 +1,57 @@
+@media screen and (max-width:800px) {
+
+    .slideInner .text { display:none }
+    .slideInner .slide1 {
+        background-image:url('../img/mainslide_mob01.jpg')
+    }
+    .slideInner .slide2 {
+        background-image:url('../img/mainslide_mob02.jpg')
+    }
+    .slideInner .slide3 {
+        background-image:url('../img/mainslide_mob03.jpg')
+    }
+
+    .slideInner .slick-dots {
+        position:absolute; bottom:30px; width:100%;
+        text-align:right; z-index:99999; padding-right:20px;
+    }
+    .slideInner .slick-dots li button {
+        width:10px; height:10px; background:rgba(255,255,255,0.3);
+        border-radius:50%; border:none; 
+        text-indent:-9999px; overflow:hidden;
+        transition:all 0.5s;
+    }
+    .slideInner .slick-dots li.slick-active button {
+        width:10px; border-radius:50%; background:rgba(255,255,255,1)
+    }
+
+    .plpa { display:none }
+
+
+    /* about_area */
+    .about_area h2 {padding:30px 0 30px; text-align:center; font-size:20px;}
+    .about_area h2 b { display:block; line-height:2 }
+
+    .about_area .about_box {background:#fff;}
+
+    .place_list { display:block; position:relative; top:0px; }
+    .place_list li { width:100%; text-align:center; margin-bottom:50px }
+    .place_list li:last-child { margin-bottom:0px }
+    .place_list li img { width:100% }
+
+    /* app_area */
+    .appbbs_area {padding:30px 0;  }
+    .appbbs_box { display:block; border-top:1px solid #ddd }
+    .appbbs_box .app_line { display:none }
+    .appbbs_box .bbs_line { width:100% }
+    .appbbs_box .bbs_line h3 { padding-top:30px }
+
+
+    .popupCont {
+        width:90%;
+        margin-left:-45%;
+    }
+
+
+
+}

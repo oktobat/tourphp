@@ -1,0 +1,148 @@
+@charset "utf-8";
+.slideOuter { position:relative }
+/* .slideInner { position:relative } */
+.slideInner .slide { height:550px; 
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:relative;    
+}
+.slideInner .text {
+    position:absolute;
+    top:50%;
+    transform:translate(-50%, -50%);
+    left:50%;
+    text-align:center;
+}
+.slideInner .text .roll_txtline {
+    position:relative; top:110px; 
+    color:#fff; font-size:22px;
+    letter-spacing:2px;
+}
+.slideInner .slide1 {
+    background-image:url('../img/mainslide01.jpg')
+}
+.slideInner .slide2 {
+    background-image:url('../img/mainslide02.jpg')
+}
+.slideInner .slide3 {
+    background-image:url('../img/mainslide03.jpg')
+}
+
+.slideInner .slick-dots {
+    position:absolute; bottom:50px; width:100%;
+    text-align:center; z-index:99999; 
+}
+.slideInner .slick-dots li { display:inline-block; margin:0 5px}
+.slideInner .slick-dots li button {
+    width:15px; height:15px; background:#fff;
+    border-radius:50%; border:none; 
+    text-indent:-9999px; overflow:hidden;
+    transition:all 0.5s;
+}
+.slideInner .slick-dots li.slick-active button {
+    width:34px; border-radius:50px;
+}
+.plpa { position:absolute; bottom:51px; left:50%; 
+    border:none; color:#fff; transform:translateX(50px);
+    z-index:9999999;
+}
+
+/* Gallery */
+#container .slideOuter1 { padding-bottom:55px; 
+    padding-left:30px; 
+    padding-right:30px;
+}
+.slideOuter1 h2 {
+    font-size:40px;
+    text-align:center;
+    padding:55px 0;
+}
+.miniSld img { width:100%; padding:0 20px }
+.slideInner1 { position:relative }
+.slideInner1 .arrow { 
+    border:none;
+    font-size:50px;
+    color:#000;
+    position:absolute; 
+    top:50%;
+    margin-top:-25px;
+}
+.slideInner1 .parr { left:-30px }
+.slideInner1 .narr { right:-30px }
+
+.slideInner1 .slick-slide {
+    opacity: 0.6;
+    transform: scale(0.85);
+    transition: all 0.5s;
+  }
+
+/* .slick-active : 무대에 보여지는 슬라이드 */
+.slideInner1 .slick-slide.slick-active {
+    opacity: 1;
+  }
+  
+/* .slick-current : 중심에 보여질 슬라이드 */
+.slideInner1 .slick-slide.slick-active.slick-center.slick-current {
+    opacity: 1;
+    transform: scale(1)
+}
+
+
+
+/* about_area */
+.about_area h2 {padding:55px 0 105px; text-align:center; font-size:40px;}
+.about_area .about_box {background:#f4f0e9;}
+.place_list { display:flex; 
+    justify-content: space-between;
+    position:relative; top:-50px;
+}
+.place_list li { width:32%; text-align:center }
+.place_list li h3 {font-weight:bold; font-size:18px; padding-top:25px; color:#000;}
+.place_list li p.txt { padding:10px 30px 0;   
+    word-break:keep-all; 
+    line-height:1.8; color:#666;}
+.place_list li .view {display:inline-block; margin-top:20px; padding-top:5px; border-top:2px solid #333; color:#666;}
+
+/* app_area */
+.appbbs_area {padding:60px 0; }
+.appbbs_box { display:flex; 
+    justify-content: space-between; }
+.appbbs_box .app_line { width:66%;
+    background:url(../img/bg_app.jpg) no-repeat;
+    padding:45px; display:flex; 
+    justify-content: space-between; }
+.appbbs_box .app_line a {
+    display:block; width:49%; 
+    border:2px solid #fff;
+    background:rgba(0,0,0,0.3);
+    padding:30px 0 30px 75px;
+    color:#fff; font-size:26px; 
+}
+.appbbs_box .app_line a:nth-child(1) { 
+    background:url(../img/ico_katalk.png) no-repeat 20px center;
+}
+.appbbs_box .app_line a:nth-child(2) { 
+    background:url(../img/ico_phone.png) no-repeat 20px center;
+}
+
+.appbbs_box .bbs_line { width:30% }
+.appbbs_box .bbs_line h3 {font-size:26px;
+    padding-bottom:10px; }
+.appbbs_box .bbs_line .notice_recent li {padding:5.5px 0;}    
+.appbbs_box .bbs_line .notice_recent li a { 
+    white-space:nowrap; overflow:hidden; display:block; 
+    text-overflow:ellipsis; 
+    background:url(../img/ico_bullet.png) no-repeat left center;
+    padding-left:13px; 
+}
+
+.popupCont {
+    position:relative;
+    width:580px;
+    background-color:#fff;
+    padding:36px;
+    text-align:center;
+    left:50%;
+    margin-left:-290px;
+}

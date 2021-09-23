@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+.package { background-image:url(../img/img_top3.jpg) }
+.package ul { text-align:center }
+.package ul li { display:inline-block; margin:50px }
+.package ul li a { color:#fff; font-size:30px; font-weight:bold }
+.package ul li a.on { color:#fa6400; }
+
+.program .bodytext_area { padding:100px 0 }
+
+.program .program_list { overflow:hidden }
+.program .program_list li { float:left; width:33.33%;
+    padding:20px 10px }
+.program .program_list li:nth-child(3n+1) { clear:both }
+
+.program .program_list li h3 {
+    padding: 40px 0 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+.program .program_list li .subttl {
+    padding: 25px 0 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fa6400;
+    letter-spacing: 0;
+}
+.program_list .program_content {
+    padding: 15px 0 0;
+    line-height: 1.8;
+    font-size: 15px;
+}
+.program_list .program_content p {
+    word-break: keep-all;
+}
+.program_list .program_content .subtxt { display:none }
+.program_list .program_content.on .subtxt { display:inline }
+.program_list li .btn_more {
+    padding: 10px 0 20px;
+    text-align: center;
+    font-size: 12px;
+}
+.program_list li .btn_more a {
+    display: inline-block;
+    padding: 5px 7px;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+}
+
+.tourdata { height:500px; background:red; color:#fff; font-size:30px; }
+
+.program .bodytext_area > .tourinfo {
+    display:none }
+.program .bodytext_area > .tourinfo.on {
+        display:block }    
+
+
+@media screen and (max-width:800px) {
+
+    .program .program_list li { float:left; width:50%;
+        padding:20px 10px }
+    .program .program_list li:nth-child(3n+1) { clear:none }
+    .program .program_list li:nth-child(2n+1) { clear:both }
+
+}

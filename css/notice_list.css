@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+
+.customer {
+    background-image:url(../img/img_top2.jpg)
+}
+.customer .page_menu { display:none }
+
+.notice_list_area .bodytext_area {
+    padding:55px 50px
+}
+.notice_list_area .bodytext_area .minisrch_form {
+    text-align:right 
+}
+.notice_list_area .bodytext_area .minisrch_form .tbox {
+    padding:0 5px 0 30px; width:200px; height:35px; line-height:35px; border:none; border-bottom:1px solid #ccc; background:url('../img/ico_search.png') no-repeat 10px 50%; background-size:15px;
+}
+.notice_list_area .bodytext_area .minisrch_form .btn_srch { width:70px; height:35px; font-size:14px;   background:#384d75; color:#fff; border:none }  
+
+.bbsListTbl { border-top:2px solid #384d75; margin:10px 0 40px}
+.bbsListTbl th { border-bottom:1px solid #ccc; 
+    background:#f0f3fa; padding:10px; height:61px; }
+.bbsListTbl td { text-align:center; line-height:1.3; 
+    border-bottom:1px solid #ccc; padding:10px;
+    height:61px; }
+.bbsListTbl td.tit_notice { text-align:left }
+.bbsListTbl col:nth-child(1) {width:10%;}
+.bbsListTbl col:nth-child(2) {width:auto;}
+.bbsListTbl col:nth-child(3) {width:15%;}
+.bbsListTbl col:nth-child(4) {width:20%;}    
+
+.pagination { text-align:center }
+.pagination a {display:inline-block; }
+.pagination a.pbtn { padding:7px; text-align:center; 
+    font-size:0;  vertical-align:middle }
+.pagination a .pagenum {display:inline-block; width:25px; height:25px; line-height:25px; text-align:center;  vertical-align:middle }
+.pagination a .currentpage {border-radius:3px; background:#384d75; color:#fff;}
+.pagination a:hover .pagenum {border-radius:3px; background:#ddd;}
+
+
+@media screen and (max-width:800px) {
+    .bbsListTbl col:nth-child(1),
+    .bbsListTbl col:nth-child(3),
+    .bbsListTbl th:nth-child(1),
+    .bbsListTbl th:nth-child(3),
+    .bbsListTbl td:nth-child(1),
+    .bbsListTbl td:nth-child(3) { display:none }
+}
+
+@media screen and (max-width:600px) {
+    .bbsListTbl col:nth-child(4),
+    .bbsListTbl th:nth-child(4),
+    .bbsListTbl td:nth-child(4) { display:none }
+}
